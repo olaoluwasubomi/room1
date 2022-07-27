@@ -1,0 +1,180 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+}
+body{
+    width:100%;
+}
+/* HEADING SECTION */
+section{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    justify-content:space-between;
+    width:100%;
+    margin:0 auto;
+}
+nav{
+    width:60%;
+    display:flex;
+    align-items:center;
+    background:url(images/desktop-image-hero-3.jpg);
+    background-repeat:no-repeat;
+    background-position:center;
+    background-size:cover;
+}
+nav a{
+    display:block;
+    margin-left:55px;
+    margin-top:30px;
+    margin-bottom:450px;
+    text-decoration:none;
+    color:#fff;
+    font-size:0.7em;
+    font-family:myFirstFont;
+}
+.room{
+    font-size:1.3em;
+}
+.text{
+    width:40%;   
+}
+.text-2{
+    margin-left:80px;
+}
+.text-2 h3{
+    font-size:2.3em;
+    font-family:myFirstFont;
+    width:80%;
+    font-weight:bolder;
+}
+@font-face {
+    font-family:myFirstFont;
+    src: url(https://fonts.google.com/specimen/League+Spartan);
+}
+.text-2 p{
+    margin-top:20px;
+    color:hsl(0, 0%, 27%);
+    width:80%;
+    font-size:0.9em;
+    line-height:1.4em;
+}
+.text-2 a{
+    display:block;
+    text-decoration:none;
+    margin-top:20px;
+    text-transform:uppercase;
+    letter-spacing:0.8em;
+    font-family: Arial, Helvetica, sans-serif;
+    color:hsl(0, 0%, 0%); 
+    font-weight:700;
+    font-size:0.9em;
+}
+.text-2 a img{
+    margin-left:10px;
+}
+.picture{
+    background:black;
+    width:25%;
+    position:relative;
+    top:81px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    justify-content:space-between;
+    padding:30px;
+}
+.picture img{
+    width:30%;
+}
+/* END OF HEADING SECTION */
+
+/* IMAGE SECTION */
+.image{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    width:100%;
+}
+.word{
+    margin:50px;
+}
+.word h3{
+    font-size:0.8em;
+    text-transform:uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+    word-spacing:0.7em;
+}
+.word p{
+    margin-top:20px;
+    color:hsl(0, 0%, 27%);
+    font-size:0.8em;
+    line-height:1.4em;
+}
+/* END OF IMAGE SECTION */
+
+
+/* MEDIA QUERY */
+@media screen and (max-width:500px){
+    section{
+        flex-direction:column;
+        width:100%; 
+        /* background:black */
+    }
+    nav{
+        width:100%;
+    }
+    nav a{
+        display:none;
+    }
+    .room{
+        display:block;
+        text-align:center;
+    }
+    nav a{
+        margin-top:10px;
+        margin-left: 20px   ;
+        margin-bottom:150px;
+    }
+    .text{
+        width:100%;
+    }
+    .text-2{
+        margin-left:30px;
+    }
+    .text-2 h3{
+        width:80%;
+        font-size:1.5em;
+        margin-top:30px;
+    }
+    .text p{
+        width:100%;
+        font-size:0.8em;
+    }
+    .picture{
+        display:none;
+        width:30%;
+        position:relative;
+        top:-325px;
+        right:-225px;
+    }
+    .image{
+        margin-top:30px;
+    }
+    .image img{
+        width:100%;
+    }
+    .word{
+        margin:20px;
+    }
+    .word h3{
+        margin-top:20px;     
+    }
+    .word p{
+        margin-top:10px;
+        width:90%;
+        color:hsl(0, 0%, 27%);  
+    }
+}
+/* END OF MEDIA QUERY */
